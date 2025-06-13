@@ -1,5 +1,5 @@
 
-import { Smartphone, Mail, Shield } from "lucide-react";
+import { Smartphone, Mail, Shield, Lock } from "lucide-react";
 
 const Footer = () => {
   return (
