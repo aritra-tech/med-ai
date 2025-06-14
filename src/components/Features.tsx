@@ -1,6 +1,5 @@
 
 import { Brain, Shield, Camera, Database, Smartphone, Lock } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Features = () => {
   const features = [
@@ -51,21 +50,28 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col gap-20 md:gap-28">
           {features.map((feature, index) => (
-            <Card key={index} className="bg-white/5 border border-white/10 rounded-2xl shadow-lg backdrop-blur-lg hover:border-purple-400/80 transition-all duration-300 group">
-              <CardHeader>
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-110">
-                  <feature.icon className="h-6 w-6 text-white" />
+            <div
+              key={index}
+              className={`flex flex-col md:flex-row items-center gap-10 md:gap-16 ${
+                index % 2 !== 0 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              <div className="relative w-64 h-64 flex-shrink-0">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-3xl blur-2xl animate-pulse"></div>
+                <div className="relative w-full h-full bg-white/5 border border-white/10 rounded-3xl flex items-center justify-center backdrop-blur-lg">
+                  <feature.icon className="h-24 w-24 text-white" />
                 </div>
-                <CardTitle className="text-white text-xl">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-400 text-base leading-relaxed">
+              </div>
+              
+              <div className="text-center md:text-left flex-grow">
+                <h3 className="text-3xl font-bold text-white mb-4">{feature.title}</h3>
+                <p className="text-lg text-gray-400 leading-relaxed max-w-lg mx-auto md:mx-0">
                   {feature.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
