@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { Smartphone, Download } from "lucide-react";
+import { Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -23,14 +22,10 @@ const Hero = () => {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+        <div className="flex justify-center items-center mb-16">
           <Button size="lg" className="bg-white text-black hover:bg-gray-200 px-8 py-4 text-lg font-semibold">
             <Download className="mr-2 h-5 w-5" />
             Download for Android
-          </Button>
-          <Button variant="outline" size="lg" className="border-gray-600 text-white hover:bg-gray-800 px-8 py-4 text-lg">
-            <Smartphone className="mr-2 h-5 w-5" />
-            Learn More
           </Button>
         </div>
 
