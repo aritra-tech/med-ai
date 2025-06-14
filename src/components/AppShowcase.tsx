@@ -38,7 +38,7 @@ const AppShowcase = () => {
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div className="relative max-w-sm flex-shrink-0">
+              <div className="relative max-w-xs flex-shrink-0">
                 <img 
                   src={item.image} 
                   alt={item.title}
