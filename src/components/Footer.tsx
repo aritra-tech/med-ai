@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800/50">
@@ -13,11 +12,29 @@ const Footer = () => {
           <p className="text-gray-400 mb-4 max-w-md">
             AI-powered prescription analysis and management for modern healthcare.
           </p>
+          <div className="flex gap-4 mb-4">
+            <a
+              href="https://www.freeprivacypolicy.com/live/6974b6ca-8e44-4fc3-b33b-53ef9eb988ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors underline"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.freeprivacypolicy.com/live/aac1e8c9-0eaf-4efa-87cc-c7cf2ddae29b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors underline"
+            >
+              Terms & Conditions
+            </a>
+          </div>
         </div>
 
         <div className="border-t border-gray-800/50 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 MedAI
+            Made with ❤️ and ☕️ by © Aritra Das 2025
           </p>
         </div>
       </div>

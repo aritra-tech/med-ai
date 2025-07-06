@@ -1,4 +1,3 @@
-
 import { Brain, Shield, Camera, Database, Smartphone, Lock } from "lucide-react";
 
 const Features = () => {
@@ -52,8 +51,8 @@ const Features = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="bg-white/5 border border-white/10 rounded-2xl shadow-lg backdrop-blur-lg hover:border-purple-400/80 transition-all duration-300 group p-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-110">
+            <div key={index} className="p-0">
+              <div className="w-12 h-12 flex items-center justify-center mb-4">
                 <feature.icon className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-white text-xl font-semibold mb-3">{feature.title}</h3>
